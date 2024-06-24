@@ -7,6 +7,7 @@ function Navbar() {
     <div className="banner">
       <h1>Welcome to CustomsByAJ</h1>
       <p>Your one-stop shop for custom shoe designs!</p>
+      
     </div>
    
       <ul>

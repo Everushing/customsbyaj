@@ -1,0 +1,82 @@
+/* Reset default margins and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container styling */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FF6EC7, #87CEEB); 
+    /* background-color: rgba(255, 255, 255, 0); fully transparent */
+    color: #fff; /* Text color */
+    font-size: 1.2rem; /* Base font size */
+  }
+  
+  /* Content container within the main container */
+  .content {
+    max-width: 600px; /* Limit width for content */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    /* background-color: rgba(255, 255, 255, 0.9); Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0); /*fully transparent*/
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem; /* Larger font size for headings */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    color: #f1e2eb; /* Hot pink color for headings */
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 95%; /* Full width for inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0); /*fully transparent*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing for textarea */
+    min-height: 150px; /* Set minimum height for textarea */
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #87CEEB; /* Light blue background color for submit button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 1rem; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #6CA6CD; /* Darker blue color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  

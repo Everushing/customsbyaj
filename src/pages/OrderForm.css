@@ -1,0 +1,87 @@
+/* Reset default margins and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container styling */
+  .order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vh;
+    background: linear-gradient(135deg, #FF6EC7, #87CEEB); /* Gradient background */
+    color: #fff; /* Text color */
+    font-size: 1.2rem; /* Base font size */
+  }
+  
+  /* Content container within the main container */
+  .order-content {
+    max-width: 600px; /* Limit width for content */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Order form styles */
+  .order-form {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .order-form h2 {
+    font-size: 2rem; /* Larger font size for headings */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    color: #FF6EC7; /* Hot pink color for headings */
+  }
+  
+  .order-form label {
+    display: block;
+    margin-bottom: 8px; /* Bottom margin for spacing */
+    color: #555; /* Label text color */
+  }
+  
+  .order-form input[type="text"],
+  .order-form input[type="email"],
+  .order-form select,
+  .order-form textarea {
+    width: 95%; /* Full width for inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0); /*fully transparent*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .order-form textarea {
+    resize: vertical; /* Allow vertical resizing for textarea */
+    min-height: 150px; /* Set minimum height for textarea */
+  }
+  
+  .order-form button {
+    background-color: #87CEEB; /* Light blue background color for submit button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 1rem; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .order-form button:hover {
+    background-color: #6CA6CD; /* Darker blue color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .order-content {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  

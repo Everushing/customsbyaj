@@ -1,29 +1,32 @@
 import React from 'react';
-import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
+import './OrderForm.css'; // Import the CSS file with styles
 
-function OrderForm() {
-  const stripe = useStripe();
-  const elements = useElements();
+const OrderForm = () => (
+  <div className="order-container">
+    <div className="order-content">
+      <h2>Place Your Order</h2>
+      <form className="order-form">
+        <label htmlFor="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+        <label htmlFor="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
-    if (!stripe || !elements) {
-      return;
-    }
+        <label htmlFor="shoe-type">Type of Shoes:</label>
+        <select id="shoe-type" name="shoe-type" required>
+          <option value="">Select type of shoes</option>
+          <option value="Customization">Customization</option>
+          <option value="Cleaning">Cleaning</option>
+          <option value="Restoration">Restoration</option>
+        </select>
 
-    // Implement your payment handling logic here using Stripe API
-    // Example: Create a payment intent and confirm payment
-  };
+        <label htmlFor="message">Additional Instructions:</label>
+        <textarea id="message" name="message" placeholder="Any specific instructions?" rows="4"></textarea>
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <CardElement />
-      <button type="submit" disabled={!stripe}>
-        Pay
-      </button>
-    </form>
-  );
-}
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+);
 
 export default OrderForm;
