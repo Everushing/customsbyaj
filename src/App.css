@@ -73,7 +73,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
   background: linear-gradient(135deg, #FF6EC7, #87CEEB);
   color: #fff;
   font-family: Arial, sans-serif;
@@ -81,13 +81,13 @@ body {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 400px;
   padding: 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: rem;
+  margin-bottom: px;
 }
 
 .info-list {

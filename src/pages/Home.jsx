@@ -1,14 +1,14 @@
 import React from 'react';
-
 // import './styles.css';
 
 const Home = () => (
 
 <div className="container">
       <div className="content">
-        <h1>Welcome to CustomsByAJ</h1>
-        <img src="AJCustoms/ajcustoms-app/src/AJShoes1.jpg" alt="Custom Shoes" style={{ maxWidth: '100%', marginBottom: '20px' }} />
+        <h1>Customs By AJ</h1>
+        <img src="/AJShoes1.jpg" alt="Custom Shoes" style={{ maxWidth: '60%', marginBottom: '20px' }} />
         <p>Based in Detroit, Michigan, CustomsByAJ offers premium custom shoe services, including cleaning, restoration, and customization.</p>
+       
         <ul className="info-list">
           <li><strong>Location:</strong> Detroit, Michigan 〽️</li>
           <li><strong>Shipping:</strong> Available Worldwide ✈️</li>
